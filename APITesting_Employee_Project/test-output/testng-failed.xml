@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EmployeeRestAPISuite]">
+  <listeners>
+    <listener class-name="com.employeeapi.utilities.Listeners"/>
+  </listeners>
+  <test name="EmployeesRestAPITest(failed)">
+    <classes>
+      <class name="com.employeeapi.testCases.Test_UpdateSingleEmployeeRecord">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="createlEmployees"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Test_UpdateSingleEmployeeRecord -->
+      <class name="com.employeeapi.testCases.Test_GetSingleEmployeeRecord">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getEmployee"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Test_GetSingleEmployeeRecord -->
+      <class name="com.employeeapi.testCases.Test_DeleteEmployeeRecord">
+        <methods>
+          <include name="setup"/>
+          <include name="getEmployee"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Test_DeleteEmployeeRecord -->
+      <class name="com.employeeapi.testCases.Test_CreateNewEmployeeRecord">
+        <methods>
+          <include name="checkResponseTime"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="createlEmployees"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Test_CreateNewEmployeeRecord -->
+      <class name="com.employeeapi.testCases.Test_GetAllEmployees">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Test_GetAllEmployees -->
+    </classes>
+  </test> <!-- EmployeesRestAPITest(failed) -->
+</suite> <!-- Failed suite [EmployeeRestAPISuite] -->
